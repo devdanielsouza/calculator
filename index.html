@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+		  <title>Calculadora JS</title>
+      <!-- Latest compiled and minified CSS -->
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	</head>
+                  <!-- CSS -->
+        <link rel="stylesheet" href="Css/estilo.css">
+
+  <body>
+
+    <div class="container"> <!-- Inicio Container -->
+        <div class="row"> <!-- Linha do painel de resultado -->
+            <div class="col d-flex justify-content-center">
+            <br /> <!-- Quebra de linha -->
+
+              <div class="calculadora"> <!-- Corpo Calculadora -->
+                <!-- Painel de Resultado -->
+                <input type="text" id="resultado" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+              <div class="row"> <!-- Primeira Linha -->
+                  <button type="button" onclick="calculos('acao', 'c')" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+                  <button type="button" onclick="calculos('acao', '/')" class="btn btn-dark btn-lg font-weight-light">/</button>
+                  <button type="button" onclick="calculos('acao', '*')" class="btn btn-dark btn-lg font-weight-light">*</button>
+              </div> <!-- Fim primeira Linha -->
+
+              <div class="row"> <!-- Segunda Linha -->
+                  <button type="button" onclick="calculos('valor', '7')" class="btn btn-dark btn-lg font-weight-light">7</button>
+                  <button type="button" onclick="calculos('valor', '8')" class="btn btn-dark btn-lg font-weight-light">8</button>
+                  <button type="button" onclick="calculos('valor', '9')" class="btn btn-dark btn-lg font-weight-light">9</button>
+                  <button type="button" onclick="calculos('acao', '-')" class="btn btn-dark btn-lg font-weight-light">-</button>
+              </div> <!-- Fim segunda Linha -->
+            
+              <div class="row"> <!-- Terceira Linha -->
+                  <button type="button" onclick="calculos('valor', '4')" class="btn btn-dark btn-lg font-weight-light">4</button>
+                  <button type="button" onclick="calculos('valor', '5')" class="btn btn-dark btn-lg font-weight-light">5</button>
+                  <button type="button" onclick="calculos('valor', '6')" class="btn btn-dark btn-lg font-weight-light">6</button>
+                  <button type="button" onclick="calculos('acao', '+')" class="btn btn-dark btn-lg font-weight-light">+</button>
+              </div> <!-- Fim terceira Linha -->
+
+              <div class="row"> <!-- Quarta Linha -->
+                  <button type="button" onclick="calculos('valor', '1')" class="btn btn-dark btn-lg font-weight-light">1</button>
+                  <button type="button" onclick="calculos('valor', '2')" class="btn btn-dark btn-lg font-weight-light">2</button>
+                  <button type="button" onclick="calculos('valor', '3')" class="btn btn-dark btn-lg font-weight-light">3</button>
+                  <button type="button" onclick="calculos('acao', '=')" class="btn btn-dark btn-lg enter">=</button>
+              </div> <!-- Fim quarta Linha -->
+
+              <div class="row" style="margin-top: -60px"> <!-- Quinta Linha -->
+                  <button type="button" onclick="calculos('valor', '0')" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+                  <button type="button" onclick="calculos('acao', '.')" class="btn btn-dark btn-lg font-weight-light">.</button>
+              </div> <!-- Fim quinta Linha -->
+
+          </div> <!-- Fim div Calculadora -->
+        </div> <!-- Fim Col -->
+      </div> <!-- Fim Row (painel resultado) -->
+    </div>  <!-- Fim container -->   
+  </body>
+
+  <script type="text/javascript" src="Js/calcular.js">
+    
+   
+  </script>	
+
+</html>
